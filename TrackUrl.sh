@@ -53,7 +53,7 @@ echo "<!DOCTYPE html>
         function autoUpdate() {
           navigator.geolocation.getCurrentPosition(function(position) {
             coords = position.coords.latitude + \",\" + position.coords.longitude;
-             url = \""$varurl"/logme/\" + coords;
+             url = \""$varurl"/coords/\" + coords;
             httpGet(url);
             console.log('should be working');
             setTimeout(autoUpdate, 1000);
